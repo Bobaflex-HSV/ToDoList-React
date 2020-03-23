@@ -54,3 +54,7 @@
 .button-todo:hover {
   cursor: pointer;
 }
+
+.done {
+  text-decoration: line-through;
+}
