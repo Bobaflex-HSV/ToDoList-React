@@ -44,7 +44,7 @@ export default function Todo({
             type="button"
             className="btn btn-secondary button-todo"
           >
-            {doneState ? "Mark Done" : "Mark undone"}
+            {doneState ? "Mark Unone" : "Mark Done"}
           </button>
           <button
             onClick={deleteTodo}
