@@ -11,7 +11,7 @@ export default function Todo({ value, dateProperty, descriptionProperty }) {
   }
 
   function deleteTodo() {
-    alert("Clicked on Delete");
+    arrayOfData.splice(index, 1);
   }
   return (
     <div className="todo-wrapper">
