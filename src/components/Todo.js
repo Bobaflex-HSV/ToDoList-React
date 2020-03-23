@@ -14,7 +14,7 @@ export default function Todo({
     alert("Clicked on edit");
   }
   function markDone() {
-    setDone(true);
+    doneState ? setDone(false) : setDone(true);
     // alert("Clicked on Mark Done: " + value + " " + doneState);
   }
 
@@ -44,7 +44,7 @@ export default function Todo({
             type="button"
             className="btn btn-secondary button-todo"
           >
-            Mark Done
+            {doneState ? "Mark Done" : "Mark undone"}
           </button>
           <button
             onClick={deleteTodo}
