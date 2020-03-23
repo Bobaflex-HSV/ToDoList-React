@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import "../styles/Todo.css";
 import TodoList from "./TodoList";
 
-export default function Todo({ value, dateProperty, descriptionProperty }) {
+export default function Todo({
+  value,
+  dateProperty,
+  descriptionProperty,
+  doneProperty
+}) {
+  const [doneState, setDone] = useState(doneProperty);
+
   function editTodo() {
     alert("Clicked on edit");
   }
   function markDone() {
-    alert("Clicked on Mark Done: " + value);
+    setDone(true);
+    // alert("Clicked on Mark Done: " + value + " " + doneState);
   }
 
   function deleteTodo() {
@@ -21,7 +29,7 @@ export default function Todo({ value, dateProperty, descriptionProperty }) {
       </div>
       <div className="description-wrapper">
         <div className="todo-description">
-          <span>{descriptionProperty}</span>
+          <span className={doneState ? "done" : ""}>{descriptionProperty}</span>
         </div>
         <div className="function-buttons">
           <button
