@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Todo.css";
+import TodoList from "./TodoList";
 
 export default function Todo({ value, dateProperty, descriptionProperty }) {
   function editTodo() {
     alert("Clicked on edit");
   }
   function markDone() {
-    alert("Clicked on Mark Done");
+    alert("Clicked on Mark Done: " + value);
   }
 
   function deleteTodo() {

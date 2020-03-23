@@ -1,25 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Todo from "./Todo";
 import "../styles/Todolist.css";
 import "../styles/Todo.css";
 
 export default function TodoList() {
   const arrayOfData = [
-    {
-      value: "Finish group work assignment",
-      date: new Date().toLocaleDateString(),
-      description: "Work on UI and do data manipulation"
-    },
-    {
-      value: "Buy toilet paper",
-      date: new Date().toLocaleDateString(),
-      description: "Try at least 3 stores...Germans love to eat toilet paper!"
-    },
-    {
-      value: "Take the dog to the vet",
-      date: new Date().toLocaleDateString(),
-      description: ""
-    },
     {
       value: "Finish group work assignment",
       date: new Date().toLocaleDateString(),
