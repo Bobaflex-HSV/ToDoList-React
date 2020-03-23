@@ -8,17 +8,20 @@ export default function TodoList() {
     {
       value: "Finish group work assignment",
       date: new Date().toLocaleDateString(),
-      description: "Work on UI and do data manipulation"
+      description: "Work on UI and do data manipulation",
+      isDone: false
     },
     {
       value: "Buy toilet paper",
       date: new Date().toLocaleDateString(),
-      description: "Try at least 3 stores...Germans love to eat toilet paper!"
+      description: "Try at least 3 stores...Germans love to eat toilet paper!",
+      isDone: false
     },
     {
       value: "Take the dog to the vet",
       date: new Date().toLocaleDateString(),
-      description: ""
+      description: "",
+      isDone: false
     }
   ];
   function addTodo() {
@@ -33,6 +36,7 @@ export default function TodoList() {
         value={element.value}
         dateProperty={element.date}
         descriptionProperty={element.description}
+        doneProperty={element.isDone}
       />
     );
   });
