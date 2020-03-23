@@ -15,7 +15,7 @@ export default function Todo({
   }
   function markDone() {
     setDone(true);
-    alert("Clicked on Mark Done: " + value + " " + doneState);
+    // alert("Clicked on Mark Done: " + value + " " + doneState);
   }
 
   function deleteTodo() {
