@@ -34,6 +34,7 @@ export default function TodoList() {
       <Todo
         key={index}
         value={element.value}
+        id={index}
         dateProperty={element.date}
         descriptionProperty={element.description}
         doneProperty={element.isDone}
