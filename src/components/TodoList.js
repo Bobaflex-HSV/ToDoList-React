@@ -4,7 +4,7 @@ import "../styles/Todolist.css";
 import "../styles/Todo.css";
 
 export default function TodoList() {
-  const arrayOfData = [
+  /* const arrayOfData = [
     {
       value: "Finish group work assignment",
       date: new Date().toLocaleDateString(),
@@ -23,7 +23,29 @@ export default function TodoList() {
       description: "",
       isDone: false
     }
-  ];
+  ]; */
+
+  const [arrayOfData, setArrayOfData] = useState([
+    {
+      value: "Finish group work assignment",
+      date: new Date().toLocaleDateString(),
+      description: "Work on UI and do data manipulation",
+      isDone: false
+    },
+    {
+      value: "Buy toilet paper",
+      date: new Date().toLocaleDateString(),
+      description: "Try at least 3 stores...Germans love to eat toilet paper!",
+      isDone: false
+    },
+    {
+      value: "Take the dog to the vet",
+      date: new Date().toLocaleDateString(),
+      description: "",
+      isDone: false
+    }
+  ]);
+
   function addTodo() {
     alert("Clicked on Add new To Do");
   }
